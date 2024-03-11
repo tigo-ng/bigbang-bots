@@ -1,0 +1,24 @@
+{
+  "name": "pathfinder",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/pathfinder/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "pathfinder:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "pathfinder:build:development"
+        },
+        "production": {
+          "buildTarget": "pathfinder:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}
