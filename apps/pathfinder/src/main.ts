@@ -10,6 +10,8 @@ import _ from 'lodash';
 import ParseDashboard from 'parse-dashboard';
 import * as Parse from 'parse-server';
 
+import './core/bot';
+
 import project from '../project.json';
 
 const port = process.env.PORT || 3333;
